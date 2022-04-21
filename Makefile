@@ -31,3 +31,6 @@ obj/main.o: source/geom/main.c
 
 clean:
 	rm bin/* obj/*
+
+
+
