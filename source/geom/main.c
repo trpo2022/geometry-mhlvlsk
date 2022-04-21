@@ -2,10 +2,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include "inputread.h"
+#include "lib/triangle.h"
 #include "lib/circle.h"
 #include "lib/point.h"
-#include "lib/triangle.h"
-
 
 int main()
 {
