@@ -1,5 +1,5 @@
-#include "inputread.h"
 #include <stdio.h>
+#include "inputread.h"
 
 void initInput(char array[32])
 {
