@@ -1,7 +1,7 @@
-#include "triangle.h"
-#include "point.h"
 #include <math.h>
 #include <stdio.h>
+#include "triangle.h"
+#include "point.h"
 
 float calculateSide(struct Point point1, struct Point point2)
 {
@@ -9,6 +9,7 @@ float calculateSide(struct Point point1, struct Point point2)
     float y1 = point1.y, y2 = point2.y;
     return sqrtf((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
 }
+
 
 float calculateTrianglePerimeter(struct Point points[4])
 {
@@ -21,6 +22,7 @@ float calculateTrianglePerimeter(struct Point points[4])
     return perimeter;
 }
 
+
 float calculateTriangleArea(struct Point points[4])
 {
     float semiperimeter = calculateTrianglePerimeter(points) / 2;
@@ -30,6 +32,7 @@ float calculateTriangleArea(struct Point points[4])
     }
     return sqrtf(area);
 }
+
 
 void printTriangleInfo(struct Point points[4], float perimeter, float area)
 {
