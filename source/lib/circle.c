@@ -17,10 +17,5 @@ void printCircleInfo(
         float x, float y, float radius, float perimeter, float area)
 {
     printf("\tcenter = (%.3f %.3f)\n\tradius = %.3f\n\tperimeter = "
-           "%.3f\n\tarea = %.3f\n\n",
-           x,
-           y,
-           radius,
-           perimeter,
-           area);
+           "%.3f\n\tarea = %.3f\n\n",x,y,radius,perimeter,area);
 }
