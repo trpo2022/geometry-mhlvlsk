@@ -6,7 +6,7 @@ all: bin/geom
 
 -include obj/inputread.d obj/circle.d obj/point.d obj/triangle.d obj/main.d
 
-bin/geom: obj/inputread.o obj/circle.o obj/point.o obj/triangle.o obj/main.o obj/lib.a
+bin/geom: obj/inputread.o obj/circle.o obj/point.o obj/triangle.o obj/main.o obj/lib.a obj/object.o
 	$(DIR_GUARD)
 	gcc $(CFLAGS) $(CPPFLAGS) -o $@ $^ -lm
 
@@ -29,8 +29,8 @@ obj/triangle.o: source/lib/triangle.c
 obj/main.o: source/geom/main.c
 	gcc $(CFLAGS) $(CPPFLAGS) -c -o $@ $<
 
+obj/object.o: source/lib/object.c
+	gcc $(CFLAGS) $(CPPFLAGS) -c -o $@ $<
+
 clean:
 	rm bin/* obj/*
-
-
-
