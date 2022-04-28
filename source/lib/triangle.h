@@ -2,7 +2,7 @@
 #include "point.h"
 
 struct Triangle {
-  struct Point points[4];
+    struct Point points[4];
 };
 
 float calculateSide(struct Point point1, struct Point point2);

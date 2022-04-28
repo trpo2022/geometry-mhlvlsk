@@ -1,3 +1,3 @@
 #pragma once
 
-void initInput(char *array);
+void initInput(char* array);
