@@ -36,8 +36,8 @@ void getObj(int i, object *obj) {
 
     if (triangle.points[3].x != triangle.points[0].x ||
         triangle.points[3].y != triangle.points[0].y) {
-      printf("Error with handling the first/last point of the "
-             "triangle.\nCheck if your data is correct.\n");
+      printf("Ошибка обработки крайних точек в треугольнике.\nПроверьте "
+             "введенные данные.\n");
     }
 
     obj->triangle = triangle;
@@ -46,7 +46,7 @@ void getObj(int i, object *obj) {
     break;
 
   default:
-    printf("Incorrect input.\n");
+    printf("Введены неверные данные.\n");
   }
   free(input);
 }
