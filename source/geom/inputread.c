@@ -1,9 +1,8 @@
-#include <stdio.h>
 #include "inputread.h"
+#include <stdio.h>
 
-void initInput(char array[32])
-{
-    char prefix[] = "(geometry) ";
-    printf("%s", prefix);
-    scanf(" %[^\n]", array);
+void initInput(char array[32]) {
+  char prefix[] = "(geometry) ";
+  printf("%s", prefix);
+  scanf(" %[^\n]", array);
 }
