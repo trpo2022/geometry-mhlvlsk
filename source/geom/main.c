@@ -7,6 +7,10 @@
 #include <stdlib.h>
 #include <string.h>
 
+
+
+#123
+
 void getObj(int i, object* obj)
 {
     char* input = malloc(sizeof(char) * 32);
